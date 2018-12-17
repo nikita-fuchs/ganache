@@ -6,7 +6,7 @@ Ganache turns 2 in the first public beta of this major release! What better way 
 
 In Ganache 2.0 a development blockchain is one part of a larger *workspace*. Workspaces allow you to save the settings and state of your development blockchain to revisit later.
 
-The other part(s) of a workspace are your desired Truffle projects. By pointing Ganache to a `truffle-config.js` file (see more in creating a workspace), we can use that project's contract artifact files to decode transaction, storage and event data.
+The other part(s) of a workspace are your desired Truffle projects. By pointing Ganache to a `truffle-config.js` file (see more in creating a workspace), we can use that project's contract artifact files to decode transaction, storage, and event data.
 
 ### Creating a Workspace
 
@@ -72,7 +72,7 @@ The new contracts page contains a list of your smart contracts by project. At a 
 
 ![Workspaces](https://truffleframework.com/img/docs/ganache/v2-shared/contracts.PNG)
 
-Clicking one of the contracts will show more details about that contract including its creation transaction, storage (state), transactions and events.
+Clicking one of the contracts will show more details about that contract including its creation transaction, storage (state), transactions, and events.
 
 ![Workspaces](https://truffleframework.com/img/docs/ganache/v2-shared/contract-details.png)
 
