@@ -12,10 +12,13 @@ The other part(s) of a workspace are your desired Truffle projects. By pointing 
 
 When you open Ganache 2.0, you'll see a new home screen. On this screen you're prompted to load an existing workspace (_if_ any exist), create a new custom workspace, or quickstart a one-click blockchain with default options. We'll go over each of these options below.
 
-![Workspaces](https://truffleframework.com/img/docs/ganache/v2-shared/home-empty.PNG)
+![Empty Home Screen](https://truffleframework.com/img/docs/ganache/v2-shared/home-empty.PNG)
 
 ### The Quickstart Workspace
 The `QUICKSTART` button on the home screen opens the `Quickstart` workspace. This workspace is similar to how Ganache 1.x worked: you get a brand new blockchain with a genesis block every time you open it. The `Quickstart` workspace is meant to provide a clean slate for prototype development.
+
+**TODO:**
+![Quickstart Button](https://truffleframework.com/img/docs/ganache/v2-shared/home-empty.PNG)
 
 ### Workspace Default Configuration
 
