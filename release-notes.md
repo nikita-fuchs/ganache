@@ -39,13 +39,26 @@ Verbose Logs: false
 
 However, during workspace creation, the `Autogenerate HD Mnemonic` is set to `true` to maintain the same set of accounts.
 
-### Saving the Current Quickstart Blockchain as a New Workspace
+### Creating Workspaces
+
+There are two methods to create a workspace described below.
+
+#### Saving the Current Quickstart Blockchain as a New Workspace
 
 As mentioned above, the `Quickstart` workspace resets the blockchain every time you restart it. We found ourselves prototyping in the `Quickstart` workspace to try out a couple of things, but then we wanted to save the blockchain and elevate it into a new workspace.
 
-To accomplish this, click the `SAVE` button near the upper right of the screen when in the `Quickstart` workspace.
+To accomplish this, click the `SAVE` button near the upper right of the screen when in the `Quickstart` workspace. You will be taken to the [options screen to configure your workspace](#workspace-configuration).
 
 ![Saving a Workspace](https://truffleframework.com/img/docs/ganache/v2-shared/save-workspace.png)
+
+#### Creating a Workspace From Scratch
+
+You can also create a workspace from the home screen. Clicking the `NEW WORKSPACE` button on the home screen will be taken to the [options screen to configure your workspace](#workspace-configuration).
+
+**TODO:**
+![New Workspace Button](https://truffleframework.com/img/docs/ganache/v2-shared/home-empty.PNG)
+
+#### Workspace Configuration
 
 A workspace name will be randomly generated for you, but you can go ahead and change it. You can also change any of the other configuration options. When you're ready to start the new workspace, click `SAVE WORKSPACE`.
 
@@ -55,11 +68,7 @@ You will be taken to the accounts screen. Notice the name of your new workspace 
 
 ![Workspace Name](https://truffleframework.com/img/docs/ganache/v2-shared/workspace-name.png)
 
-### Saving & Switching Workspaces
-
-To save a workspace, click the SAVE button near the upper right of the screen. If you have not selected a name, a name will be randomly generated for you. Accept that name or fill in your own, then click SAVE WORKSPACE.
-
-![Saving a Workspace](https://truffleframework.com/img/docs/ganache/v2-shared/save-workspace.png)
+### Switching Workspaces
 
 To switch workspaces, click the SWTICH button near the upper right of the screen. You'll be taken to the home screen where you can select a different existing workspace or create a new one.
 
