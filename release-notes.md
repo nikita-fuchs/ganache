@@ -8,17 +8,50 @@ In Ganache 2.0 a development blockchain is one part of a larger *workspace*. Wor
 
 The other part(s) of a workspace are your desired Truffle projects. By pointing Ganache to a `truffle-config.js` file (see more in creating a workspace), we can use that project's contract artifact files to decode transaction, storage, and event data.
 
-### Creating a Workspace
+### New Home Screen
 
-When you open Ganache 2.0 for the first time, you'll see a new home screen. On this screen you're prompted to load an existing workspace (_if_ any exist), create a new custom workspace or quickstart a one-click blockchain with default options (see below).
+When you open Ganache 2.0, you'll see a new home screen. On this screen you're prompted to load an existing workspace (_if_ any exist), create a new custom workspace, or quickstart a one-click blockchain with default options. We'll go over each of these options below.
 
 ![Workspaces](https://truffleframework.com/img/docs/ganache/v2-shared/home-empty.PNG)
 
-Selecting NEW WORKSPACE will take you to the options screen to configure your workspace.
+### The Quickstart Workspace
+The `QUICKSTART` button on the home screen opens the `Quickstart` workspace. This workspace is similar to how Ganache 1.x worked: you get a brand new blockchain with a genesis block every time you open it. The `Quickstart` workspace is meant to provide a clean slate for prototype development.
+
+### Workspace Default Configuration
+
+Every workspace has it's own configuration. Each workspace's configuration is based off the Quickstart configuration at the time of workspace creation. While these can be changed, the `Quickstart` workspace starts with the below options:
+
+```
+Hostname: 127.0.0.1 - localhost
+Port Number: 7545
+Network ID: 5777
+Automine: true
+Error on Tx Failure: true
+
+Account Default Balance: 100
+Total Accounts to Generate: 10
+Autogenerate HD Mnemonic: false
+Lock Accounts: false
+
+Output Logs to File: false
+Verbose Logs: false
+```
+
+However, during workspace creation, the `Autogenerate HD Mnemonic` is set to `true` to maintain the same set of accounts.
+
+### Saving the Current Quickstart Blockchain as a New Workspace
+
+As mentioned above, the `Quickstart` workspace resets the blockchain every time you restart it. We found ourselves prototyping in the `Quickstart` workspace to try out a couple of things, but then we wanted to save the blockchain and elevate it into a new workspace.
+
+To accomplish this, click the `SAVE` button near the upper right of the screen when in the `Quickstart` workspace.
+
+![Saving a Workspace](https://truffleframework.com/img/docs/ganache/v2-shared/save-workspace.png)
+
+A workspace name will be randomly generated for you, but you can go ahead and change it. You can also change any of the other configuration options. When you're ready to start the new workspace, click `SAVE WORKSPACE`.
 
 ![New Workspace](https://truffleframework.com/img/docs/ganache/v2-shared/new-workspace.PNG)
 
-After you're satisfied with the configuration, click SAVE WORKSPACE to be taken to the accounts screen. Notice the name of your new workspace near the upper right.
+You will be taken to the accounts screen. Notice the name of your new workspace near the upper right.
 
 ![Workspace Name](https://truffleframework.com/img/docs/ganache/v2-shared/workspace-name.png)
 
@@ -37,26 +70,6 @@ To switch workspaces, click the SWTICH button near the upper right of the screen
 To delete a workspace, from the home screen, hover over the workspace name and click the trash can icon on the right hand side. From there you'll see a prompt ask you to confirm the deletion. Click REMOVE to delete the workspace.
 
 ![Workspaces](https://truffleframework.com/img/docs/ganache/v2-shared/home-delete.png)
-
-### Workspace Defaults
-
-Quickstart workspaces have these default options:
-
-```
-Hostname: 127.0.0.1 - localhost
-Port Number: 7545
-Network ID: 5777
-Automine: true
-Error on Tx Failure: true
-
-Account Default Balance: 100
-Total Accounts to Generate: 10
-Autogenerate HD Mnemonic: false
-Lock Accounts: false
-
-Output Logs to File: false
-Verbose Logs: false
-```
 
 ## Truffle Projects: Contract & Event Decoding
 
