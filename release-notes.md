@@ -135,12 +135,20 @@ Clicking one of the contracts will show more details about that contract includi
 
 The new events page shows the events that have fired during this chain's life. We'll try to decode the events if possible. A decoded event will show its name, the emitting contract, hash of the transaction it appears in, log index, and block time. Encoded events will not display decoded names (they appear instead with the generic name `Encoded Event`) or contract names.
 
-**Why aren't my events being decoded?** Check and make sure you've added the corresponding Truffle project defining that event.
+**Why aren't my events being decoded?** Check and make sure you've added the corresponding Truffle project with the contract that defines that event.
 
 ![Events Page](https://truffleframework.com/img/docs/ganache/v2-shared/events.png)
 
 Clicking a decoded contract will reveal more information about the event including its return values and signature.
 
 ![Event Details](https://truffleframework.com/img/docs/ganache/v2-shared/event-details.png)
+
+### Decoded Transactions
+
+Ganache will now attempt to decode transactions that are contract calls. In addition to listing the events (encoded or not) for the transaction, Ganache will show the function signature of the transaction as well as the values of the arguments.
+
+![Decoded Transaction](https://truffleframework.com/img/docs/ganache/v2-shared/decoded-transaction.png)
+
+**Why aren't my transactions being decoded?** Check and make sure you've added the corresponding Truffle project with the contract that the transaction is being interacted with.
 
 **Why the major version bump?** There is some debate over the use of semver for GUI applications. After our own deliberations, we've decided to bump Ganache's major version to 2.0 because the _workflow_ has a breaking change.
