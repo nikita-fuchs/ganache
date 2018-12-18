@@ -12,13 +12,12 @@ The other part(s) of a workspace are your desired Truffle projects. By pointing 
 
 When you open Ganache 2.0, you'll see a new home screen. On this screen you're prompted to load an existing workspace (_if_ any exist), create a new custom workspace, or quickstart a one-click blockchain with default options. We'll go over each of these options below.
 
-![Empty Home Screen](https://truffleframework.com/img/docs/ganache/v2-shared/home-empty.PNG)
+![Empty Home Screen](https://truffleframework.com/img/docs/ganache/v2-shared/home-empty.png)
 
 ### The Quickstart Workspace
 The `QUICKSTART` button on the home screen opens the `Quickstart` workspace. This workspace is similar to how Ganache 1.x worked: you get a brand new blockchain with a genesis block every time you open it. The `Quickstart` workspace is meant to provide a clean slate for prototype development.
 
-**TODO:**
-![Quickstart Button](https://truffleframework.com/img/docs/ganache/v2-shared/home-empty.PNG)
+![Quickstart Button](https://truffleframework.com/img/docs/ganache/v2-shared/home-quickstart.png)
 
 ### Workspace Default Configuration
 
@@ -58,14 +57,13 @@ To accomplish this, click the `SAVE` button near the upper right of the screen w
 
 You can also create a workspace from the home screen. Clicking the `NEW WORKSPACE` button on the home screen will be taken to the [options screen to configure your workspace](#workspace-configuration).
 
-**TODO:**
-![New Workspace Button](https://truffleframework.com/img/docs/ganache/v2-shared/home-empty.PNG)
+![New Workspace Button](https://truffleframework.com/img/docs/ganache/v2-shared/home-new-workspace.png)
 
 #### Workspace Configuration
 
-A workspace name will be randomly generated for you, but you can go ahead and change it. You can also change any of the other configuration options. When you're ready to start the new workspace, click `SAVE WORKSPACE`.
+A workspace name will be randomly generated for you, but you can go ahead and change it. You can also change any of the other configuration options. When you're ready to start the new workspace, click `SAVE WORKSPACE` in the top right corner.
 
-![New Workspace](https://truffleframework.com/img/docs/ganache/v2-shared/new-workspace.PNG)
+![New Workspace](https://truffleframework.com/img/docs/ganache/v2-shared/new-workspace.png)
 
 You will be taken to the accounts screen. Notice the name of your new workspace near the upper right.
 
@@ -75,8 +73,7 @@ You will be taken to the accounts screen. Notice the name of your new workspace 
 
 After at least one workspace has been created, the home screen will now have a list of workspaces for you to choose from. You can scroll through the list to find the desired workspace, and clicking on it will load it.
 
-**TODO:**
-![Filled Home Screen](https://truffleframework.com/img/docs/ganache/v2-shared/home-empty.PNG)
+![Filled Home Screen](https://truffleframework.com/img/docs/ganache/v2-shared/home-filled.png)
 
 You will be taken to the accounts page. You'll notice that the blockchain state picked up from where you left off (i.e. mnemonic, accounts, associated balances, block height, transactions, etc.).
 
@@ -90,7 +87,7 @@ To switch workspaces, click the `SWTICH` button near the upper right of the scre
 
 To delete a workspace, from the home screen, hover over the workspace name and click the trash can icon on the right hand side. From there you'll see a prompt ask you to confirm the deletion. Click `REMOVE` to delete the workspace. This action is irreversible! While your linked Truffle projects will remain safe and unchanged, the blockchain data (i.e. blocks, transactions, events, etc.) will be deleted.
 
-![Workspaces](https://truffleframework.com/img/docs/ganache/v2-shared/home-delete.png)
+![Delete Workspace](https://truffleframework.com/img/docs/ganache/v2-shared/home-delete.png)
 
 ## Truffle Projects: Contract & Event Decoding
 
@@ -100,15 +97,19 @@ Ganache 2.0 goes beyond blocks and transactions, providing you with fully decode
 
 To link a project, enter the settings by clicking the gear icon in the upper right.
 
-**TODO:**
+![Settings Icon](https://truffleframework.com/img/docs/ganache/v2-shared/settings-icon.png)
 
 You should be seeing the `WORKSPACE` settings pane; if not, you can get there by clicking `WORKSPACE` tab in the top left.
 
-**TODO**
+![Workspaces Settings Pane Tab](https://truffleframework.com/img/docs/ganache/v2-shared/workspaces-pane-tab.png)
 
 From here, there is a section labeled `TRUFFLE PROJECTS`. Beneath this box, click the button `ADD PROJECT`. A file selection popup will appear. Navigate to the folder of your Truffle project, and select the `truffle-config.js` or `truffle.js` configuration file. The file you pick **must** be either named `truffle-config.js` or `truffle.js` for Ganache to correctly load it.
 
-After selecting your file, you'll see it listed in `TRUFFLE PROJECTS` section. You can add multiple projects to a workspace. After you're finished with adding projects you can click the `SAVE AND RESTART` (`SAVE WORKSPACE` if this is a new workspace) button in the top right.
+After selecting your file, you'll see it listed in `TRUFFLE PROJECTS` section.
+
+![Project Listed](https://truffleframework.com/img/docs/ganache/v2-shared/project-listed.png)
+
+You can add multiple projects to a workspace. After you're finished with adding projects you can click the `SAVE AND RESTART` (`SAVE WORKSPACE` if this is a new workspace) button in the top right.
 
 ### Unlinking a Truffle Project
 
@@ -116,7 +117,7 @@ If you no longer want a Truffle project linked to a workspace, go to the `WORKSP
 
 To remove/unlink a Truffle project from the workspace, click on the project file in the `TRUFFLE PROJECTS` list and then click the `REMOVE PROJECT` button.
 
-**TODO:**
+![Project Selected](https://truffleframework.com/img/docs/ganache/v2-shared/project-selected.png)
 
 When you're done, click the `SAVE AND RESTART` (`SAVE WORKSPACE` if this is a new workspace) button in the top right.
 
@@ -124,7 +125,7 @@ When you're done, click the `SAVE AND RESTART` (`SAVE WORKSPACE` if this is a ne
 
 The new contracts page contains a list of your smart contracts by project. At a glance we can see the contract's name, address, transaction count, and deployment status.
 
-![Workspaces](https://truffleframework.com/img/docs/ganache/v2-shared/contracts.PNG)
+![Workspaces](https://truffleframework.com/img/docs/ganache/v2-shared/contracts.png)
 
 Clicking one of the contracts will show more details about that contract including its creation transaction, storage (state), transactions, and events.
 
@@ -136,10 +137,10 @@ The new events page shows the events that have fired during this chain's life. W
 
 **Why aren't my events being decoded?** Check and make sure you've added the corresponding Truffle project defining that event.
 
-![Workspaces](https://truffleframework.com/img/docs/ganache/v2-shared/events.PNG)
+![Workspaces](https://truffleframework.com/img/docs/ganache/v2-shared/events.png)
 
 Clicking a decoded contract will reveal more information about the event including its return values and signature.
 
-![Workspaces](https://truffleframework.com/img/docs/ganache/v2-shared/event-details.PNG)
+![Workspaces](https://truffleframework.com/img/docs/ganache/v2-shared/event-details.png)
 
 **Why the major version bump?** There is some debate over the use of semver for GUI applications. After our own deliberations, we've decided to bump Ganache's major version to 2.0 because the _workflow_ has a breaking change.
