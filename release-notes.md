@@ -94,11 +94,31 @@ To delete a workspace, from the home screen, hover over the workspace name and c
 
 ## Truffle Projects: Contract & Event Decoding
 
-Ganache 2.0 goes beyond blocks and transactions, providing you with fully decoded contract and event data. To get these benefits we must add **truffle projects** to our workspace.
+Ganache 2.0 goes beyond blocks and transactions, providing you with fully decoded contract and event data. To get these benefits we must add **Truffle projects** to our workspace.
 
-To add a project, click the gear icon in the upper right. You'll see the workspace settings pane. The second input is a list of `truffle-config.js` file paths.
+### Link a Truffle Project
 
-Once you've added a Truffle project
+To link a project, enter the settings by clicking the gear icon in the upper right.
+
+**TODO:**
+
+You should be seeing the `WORKSPACE` settings pane; if not, you can get there by clicking `WORKSPACE` tab in the top left.
+
+**TODO**
+
+From here, there is a section labeled `TRUFFLE PROJECTS`. Beneath this box, click the button `ADD PROJECT`. A file selection popup will appear. Navigate to the folder of your Truffle project, and select the `truffle-config.js` or `truffle.js` configuration file. The file you pick **must** be either named `truffle-config.js` or `truffle.js` for Ganache to correctly load it.
+
+After selecting your file, you'll see it listed in `TRUFFLE PROJECTS` section. You can add multiple projects to a workspace. After you're finished with adding projects you can click the `SAVE AND RESTART` (`SAVE WORKSPACE` if this is a new workspace) button in the top right.
+
+### Unlinking a Truffle Project
+
+If you no longer want a Truffle project linked to a workspace, go to the `WORKSPACE` settings pane the same way you did when [linking the projct](#link-a-truffle-project).
+
+To remove/unlink a Truffle project from the workspace, click on the project file in the `TRUFFLE PROJECTS` list and then click the `REMOVE PROJECT` button.
+
+**TODO:**
+
+When you're done, click the `SAVE AND RESTART` (`SAVE WORKSPACE` if this is a new workspace) button in the top right.
 
 ### Contracts Page
 
