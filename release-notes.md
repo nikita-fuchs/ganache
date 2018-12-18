@@ -82,13 +82,13 @@ You will be taken to the accounts page. You'll notice that the blockchain state 
 
 ### Switching Workspaces
 
-To switch workspaces, click the SWTICH button near the upper right of the screen. You'll be taken to the home screen where you can select a different existing workspace or create a new one.
+To switch workspaces, click the `SWTICH` button near the upper right of the screen. You'll be taken to the home screen where you can select a different existing workspace or create a new one.
 
 ![Switching Workspaces](https://truffleframework.com/img/docs/ganache/v2-shared/switch-workspaces.png)
 
 ### Deleting Workspaces
 
-To delete a workspace, from the home screen, hover over the workspace name and click the trash can icon on the right hand side. From there you'll see a prompt ask you to confirm the deletion. Click REMOVE to delete the workspace.
+To delete a workspace, from the home screen, hover over the workspace name and click the trash can icon on the right hand side. From there you'll see a prompt ask you to confirm the deletion. Click `REMOVE` to delete the workspace. This action is irreversible! While your linked Truffle projects will remain safe and unchanged, the blockchain data (i.e. blocks, transactions, events, etc.) will be deleted.
 
 ![Workspaces](https://truffleframework.com/img/docs/ganache/v2-shared/home-delete.png)
 
