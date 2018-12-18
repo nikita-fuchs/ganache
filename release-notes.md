@@ -132,7 +132,7 @@ Clicking one of the contracts will show more details about that contract includi
 
 ### Events Page
 
-The new events page shows the events that have fired during this chain's life. We'll try to decode the events if possible. A decoded event will show its name, the emitting contract, hash of the transaction it appears in, log index, and block time. Encoded events will not display decoded names (they appear instead with the generic name "Encoded Event") or contract names.
+The new events page shows the events that have fired during this chain's life. We'll try to decode the events if possible. A decoded event will show its name, the emitting contract, hash of the transaction it appears in, log index, and block time. Encoded events will not display decoded names (they appear instead with the generic name `Encoded Event`) or contract names.
 
 **Why aren't my events being decoded?** Check and make sure you've added the corresponding Truffle project defining that event.
 
