@@ -125,11 +125,11 @@ When you're done, click the `SAVE AND RESTART` (`SAVE WORKSPACE` if this is a ne
 
 The new contracts page contains a list of your smart contracts by project. At a glance we can see the contract's name, address, transaction count, and deployment status.
 
-![Workspaces](https://truffleframework.com/img/docs/ganache/v2-shared/contracts.png)
+![Contracts Page](https://truffleframework.com/img/docs/ganache/v2-shared/contracts.png)
 
 Clicking one of the contracts will show more details about that contract including its creation transaction, storage (state), transactions, and events.
 
-![Workspaces](https://truffleframework.com/img/docs/ganache/v2-shared/contract-details.png)
+![Contract Details](https://truffleframework.com/img/docs/ganache/v2-shared/contract-details.png)
 
 ### Events Page
 
@@ -137,10 +137,10 @@ The new events page shows the events that have fired during this chain's life. W
 
 **Why aren't my events being decoded?** Check and make sure you've added the corresponding Truffle project defining that event.
 
-![Workspaces](https://truffleframework.com/img/docs/ganache/v2-shared/events.png)
+![Events Page](https://truffleframework.com/img/docs/ganache/v2-shared/events.png)
 
 Clicking a decoded contract will reveal more information about the event including its return values and signature.
 
-![Workspaces](https://truffleframework.com/img/docs/ganache/v2-shared/event-details.png)
+![Event Details](https://truffleframework.com/img/docs/ganache/v2-shared/event-details.png)
 
 **Why the major version bump?** There is some debate over the use of semver for GUI applications. After our own deliberations, we've decided to bump Ganache's major version to 2.0 because the _workflow_ has a breaking change.
