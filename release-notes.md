@@ -71,6 +71,15 @@ You will be taken to the accounts screen. Notice the name of your new workspace 
 
 ![Workspace Name](https://truffleframework.com/img/docs/ganache/v2-shared/workspace-name.png)
 
+### Loading Existing Workspaces
+
+After at least one workspace has been created, the home screen will now have a list of workspaces for you to choose from. You can scroll through the list to find the desired workspace, and clicking on it will load it.
+
+**TODO:**
+![Filled Home Screen](https://truffleframework.com/img/docs/ganache/v2-shared/home-empty.PNG)
+
+You will be taken to the accounts page. You'll notice that the blockchain state picked up from where you left off (i.e. mnemonic, accounts, associated balances, block height, transactions, etc.).
+
 ### Switching Workspaces
 
 To switch workspaces, click the SWTICH button near the upper right of the screen. You'll be taken to the home screen where you can select a different existing workspace or create a new one.
