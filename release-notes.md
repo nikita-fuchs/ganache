@@ -19,7 +19,7 @@ Ganache turns 2 in the first public beta of this major release! What better way 
   * [Unlinking a Truffle Project](#unlinking-a-truffle-project)
   * [Contracts Page](#contracts-page)
   * [Events Page](#events-page)
-  * [Decoded Transactions)(#decoded-transactions)
+  * [Decoded Transactions](#decoded-transactions)
 
 ## Workspaces: One Ganache, Multiple Blockchains
 
