@@ -25,13 +25,13 @@ Ganache turns 2 in the first public beta of this major release! What better way 
 
 In Ganache 2.0 a development blockchain is one part of a larger *workspace*. Workspaces allow you to save the settings and state of your development blockchain to revisit later.
 
-The other part(s) of a workspace are your desired Truffle projects. By pointing Ganache to a `truffle-config.js` file (see more in creating a workspace), we can use that project's contract artifact files to decode transaction, storage, and event data.
+The other part(s) of a workspace are your desired Truffle projects. By pointing Ganache to a `truffle-config.js` file (see more in [creating workspaces](#creating-workspaces)), we can use that project's contract artifact files to decode transaction, storage, and event data.
 
 ### New Home Screen
 
 <sup>\[ [∧ *Back to Contents*](#contents) \]</sup>
 
-When you open Ganache 2.0, you'll see a new home screen. On this screen you're prompted to load an existing workspace (_if_ any exist), create a new custom workspace, or quickstart a one-click blockchain with default options. We'll go over each of these options below.
+When you open Ganache 2.0, you'll see a new home screen. On this screen you're prompted to load an existing workspace (_if_ any exist), create a new custom workspace, or quickstart a one-click blockchain with [default options](#workspace-default-configuration). We'll go over each of these options below.
 
 ![Empty Home Screen](https://truffleframework.com/img/docs/ganache/v2-shared-seese/home-empty.png)
 
@@ -75,7 +75,7 @@ There are two methods to create a workspace described below.
 
 #### Saving the Current Quickstart Blockchain as a New Workspace
 
-As mentioned above, the `Quickstart` workspace resets the blockchain every time you restart it. We found ourselves prototyping in the `Quickstart` workspace to try out a couple of things, but then we wanted to save the blockchain and elevate it into a new workspace.
+As mentioned above, the `Quickstart` workspace resets the blockchain on every restart. Perhaps we found ourselves prototyping in the `Quickstart` workspace to try out a couple of things, but then we want to save the blockchain as a new workspace for later recall.
 
 To accomplish this, click the `SAVE` button near the upper right of the screen when in the `Quickstart` workspace. You will be taken to the [options screen to configure your workspace](#workspace-configuration).
 
@@ -83,7 +83,7 @@ To accomplish this, click the `SAVE` button near the upper right of the screen w
 
 #### Creating a Workspace From Scratch
 
-You can also create a workspace from the home screen. Clicking the `NEW WORKSPACE` button on the home screen will be taken to the [options screen to configure your workspace](#workspace-configuration).
+You can also create a workspace from the home screen. Clicking the `NEW WORKSPACE` button on the home screen will take us to the [options screen to configure your workspace](#workspace-configuration).
 
 ![New Workspace Button](https://truffleframework.com/img/docs/ganache/v2-shared-seese/home-new-workspace.png)
 
@@ -101,7 +101,7 @@ You will be taken to the accounts screen. Notice the name of your new workspace 
 
 <sup>\[ [∧ *Back to Contents*](#contents) \]</sup>
 
-After at least one workspace has been created, the home screen will now have a list of workspaces for you to choose from. You can scroll through the list to find the desired workspace, and clicking on it will load it.
+After at least one workspace has been created, the home screen will now have a list of workspaces for you to choose from. You can scroll through the list to find the desired workspace, and then load the workspace by clicking its name.
 
 ![Filled Home Screen](https://truffleframework.com/img/docs/ganache/v2-shared-seese/home-filled.png)
 
@@ -119,7 +119,7 @@ To switch workspaces, click the `SWTICH` button near the upper right of the scre
 
 <sup>\[ [∧ *Back to Contents*](#contents) \]</sup>
 
-To delete a workspace, from the home screen, hover over the workspace name and click the trash can icon on the right hand side. From there you'll see a prompt ask you to confirm the deletion. Click `REMOVE` to delete the workspace. This action is irreversible! While your linked Truffle projects will remain safe and unchanged, the blockchain data (i.e. blocks, transactions, events, etc.) will be deleted.
+To delete a workspace, from the home screen, hover over the workspace name and click the trash can icon on the right hand side. From there you'll see a prompt asking you to confirm the deletion. Click `REMOVE` to delete the workspace. This action is irreversible! While your linked Truffle projects will remain safe and unchanged, the blockchain data (i.e. blocks, transactions, events, etc.) will be deleted.
 
 ![Delete Workspace](https://truffleframework.com/img/docs/ganache/v2-shared-seese/home-delete.png)
 
@@ -135,13 +135,13 @@ To link a project, enter the settings by clicking the gear icon in the upper rig
 
 ![Settings Icon](https://truffleframework.com/img/docs/ganache/v2-shared-seese/settings-icon.png)
 
-You should be seeing the `WORKSPACE` settings pane; if not, you can get there by clicking `WORKSPACE` tab in the top left.
+You should be seeing the `WORKSPACE` settings pane; if not, you can get there by clicking the `WORKSPACE` tab in the top left.
 
 ![Workspaces Settings Pane Tab](https://truffleframework.com/img/docs/ganache/v2-shared-seese/workspaces-pane-tab.png)
 
 From here, there is a section labeled `TRUFFLE PROJECTS`. Beneath this box, click the button `ADD PROJECT`. A file selection popup will appear. Navigate to the folder of your Truffle project, and select the `truffle-config.js` or `truffle.js` configuration file. The file you pick **must** be either named `truffle-config.js` or `truffle.js` for Ganache to correctly load it.
 
-After selecting your file, you'll see it listed in `TRUFFLE PROJECTS` section.
+After selecting the file, you'll see it listed in the `TRUFFLE PROJECTS` section.
 
 ![Project Listed](https://truffleframework.com/img/docs/ganache/v2-shared-seese/project-listed.png)
 
@@ -151,7 +151,7 @@ You can add multiple projects to a workspace. After you're finished with adding 
 
 <sup>\[ [∧ *Back to Contents*](#contents) \]</sup>
 
-If you no longer want a Truffle project linked to a workspace, go to the `WORKSPACE` settings pane the same way you did when [linking the projct](#link-a-truffle-project).
+If you no longer want a Truffle project linked to a workspace, go to the `WORKSPACE` settings pane the same way you did when [linking the project](#link-a-truffle-project).
 
 To remove/unlink a Truffle project from the workspace, click on the project file in the `TRUFFLE PROJECTS` list and then click the `REMOVE PROJECT` button.
 
