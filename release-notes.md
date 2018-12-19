@@ -1,6 +1,24 @@
 Ganache turns 2 in the first public beta of this major release! What better way to celebrate than with a cake? The batter is ready; please help us finish the baking process by using the beta in your development workflow. This version is feature-complete, but as with any beta release be on the lookout for cake invaders. 🐛
 
-**Get ready for more dapp insight!** You can now save your development blockchains in workspaces. These workspaces contain the configuration of your development chian, along with any Truffle projects you've provided to decode contract and event data.
+💡 **Get ready for more dapp insights!** You can now save your development blockchains in [workspaces](#workspaces-one-ganache-multiple-blockchains). These workspaces contain the configuration of your development chian, along with any [Truffle projects](#truffle-projects-contract--event-decoding) you've provided to decode contract and event data.
+
+ℹ️ **Why a major version bump?** There is some debate over the use of semver for GUI applications. After our own deliberations, we've decided to bump Ganache's major version to 2.0 because the _workflow_ has breaking changes.
+
+## Contents
+
+* [Workspaces](#workspaces-one-ganache-multiple-blockchains)
+  * [New Home Screen](#new-home-screen)
+  * [The Quickstart Workspace](#the-quickstart-workspace)
+  * [Workspace Default Configuration](#workspace-default-configuration)
+  * [Creating Workspaces](#creating-workspaces)
+  * [Loading Existing Workspaces](#loading-existing-workspaces)
+  * [Switching Workspaces](#switching-workspaces)
+  * [Deleting Workspaces](#deleting-workspaces)
+* [Truffle Projects](#truffle-projects-contract--event-decoding)
+  * [Link a Truffle Project](#link-a-truffle-project)
+  * [Unlinking a Truffle Project](#unlinking-a-truffle-project)
+  * [Contracts Page](#contracts-page)
+  * [Events Page](#events-page)
 
 ## Workspaces: One Ganache, Multiple Blockchains
 
@@ -149,6 +167,4 @@ Ganache will now attempt to decode transactions that are contract calls. In addi
 
 ![Decoded Transaction](https://truffleframework.com/img/docs/ganache/v2-shared-seese/decoded-transaction.png)
 
-**Why aren't my transactions being decoded?** Check and make sure you've added the corresponding Truffle project with the contract that the transaction is being interacted with.
-
-**Why the major version bump?** There is some debate over the use of semver for GUI applications. After our own deliberations, we've decided to bump Ganache's major version to 2.0 because the _workflow_ has a breaking change.
+ℹ️ **Why aren't my transactions being decoded?** Check and make sure you've added the corresponding Truffle project with the contract that the transaction is being interacted with.
