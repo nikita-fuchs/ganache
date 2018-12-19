@@ -1,6 +1,6 @@
 Ganache turns 2 in the first public beta of this major release! What better way to celebrate than with a cake? The batter is ready; please help us finish the baking process by using the beta in your development workflow. This version is feature-complete, but as with any beta release be on the lookout for cake invaders. 🐛
 
-**Get ready for more dapp insight!** You can now save your development blockchains in workspaces. These workspaces contain the configuration of your development chian, along with any Truffle projects you've provided to decode contract and event data.
+**Get ready for more dapp insight!** You can now save your development blockchains in workspaces. These workspaces contain the configuration of your development chain, along with any Truffle projects you've provided to decode contract and event data.
 
 ## Workspaces: One Ganache, Multiple Blockchains
 
