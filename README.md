@@ -1,3 +1,6 @@
+Unpack node modules with ```cat node_modules.zip* > ./node_modules.zip```
+
+
 <p align="center">
   <img src="https://github.com/trufflesuite/ganache/blob/develop/resources/icons/png/128x128.png?raw=true")
 </p>
