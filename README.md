@@ -1,4 +1,4 @@
-Unpack node modules with ```cat node_modules.zip* > ./node_modules.zip```
+Using the built version throws error on importing truffle.js, use with ```npm run start``` instead
 
 
 <p align="center">
